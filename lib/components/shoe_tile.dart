@@ -29,10 +29,13 @@ class ShoeTile extends StatelessWidget {
             child: Image.asset(shoe.imagePath),
           ),
           //description
-          Text(
-            shoe.description,
-            style: TextStyle(
-              color: Colors.grey[600],
+          Padding(
+            padding: const EdgeInsets.only(left: 12.0),
+            child: Text(
+              shoe.description,
+              style: TextStyle(
+                color: Colors.grey[600],
+              ),
             ),
           ),
           Row(

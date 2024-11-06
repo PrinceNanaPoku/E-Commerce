@@ -32,6 +32,14 @@ flutter:
     - lib/images/sneaker_5.jpg
     - lib/images/sneaker_6.jpg
     - lib/images/sneaker_logo.png
+    - lib/images/adidastopanga.jpg
+    - lib/images/curry.jpg
+    - lib/images/Jordan4.webp
+    - lib/images/lebron 21.webp
+    - lib/images/KDTrey16.webp
+    - lib/images/nike dunks.png
+    - lib/images/NikeZoom.jpg
+    - lib/images/jordan1.avif
 
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
