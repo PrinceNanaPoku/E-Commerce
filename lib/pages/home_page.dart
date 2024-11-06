@@ -1,4 +1,5 @@
 import 'package:ecommerce/components/bottom_nav_bar.dart';
+import 'package:ecommerce/pages/intro_page.dart';
 import 'package:flutter/material.dart';
 
 import 'cart_page.dart';
@@ -64,16 +65,24 @@ class _HomePageState extends State<HomePage> {
                   color: Colors.grey[800],
                 ),
                 //other pages
-                const ListTile(
-                  leading: Icon(
-                    Icons.home,
-                    color: Colors.white,
+                GestureDetector(
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => const HomePage(),
+                    ),
                   ),
-                  title: Text(
-                    'Home',
-                    style: TextStyle(color: Colors.white),
+                  child: const ListTile(
+                    leading: Icon(
+                      Icons.home,
+                      color: Colors.white,
+                    ),
+                    title: Text(
+                      'Home',
+                      style: TextStyle(color: Colors.white),
+                    ),
                   ),
                 ),
+
                 const ListTile(
                   leading: Icon(
                     Icons.info,
@@ -87,16 +96,21 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
 
-            const Padding(
-              padding: EdgeInsets.only(bottom: 20.0),
-              child: ListTile(
-                leading: Icon(
-                  Icons.logout,
-                  color: Colors.white,
-                ),
-                title: Text(
-                  'Logout',
-                  style: TextStyle(color: Colors.white),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 20.0),
+              child: GestureDetector(
+                onTap: () => Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => const IntroPage(),
+                )),
+                child: const ListTile(
+                  leading: Icon(
+                    Icons.logout,
+                    color: Colors.white,
+                  ),
+                  title: Text(
+                    'Logout',
+                    style: TextStyle(color: Colors.white),
+                  ),
                 ),
               ),
             ),
